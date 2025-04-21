@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    padding: 10px 20px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+    font-size: 1.9rem;
+    margin-left: 4rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navbar .menu a:hover {
+    color: white;
+}
+
+.navbar .menu {
+    background-color: #fbc02d;
+    padding: 10px 20px;
+}
+
+body {
+    background-color: #f4f6fc;
+  }
+  .Contacts{
+    text-align: center;
+    margin-top: 0;
+ }
+ .Contacts-section::after{
+     content: '';
+     display: block;
+     width: 50px;
+     height: 3px;
+     background-color: #FFC107;
+     margin: 8px auto 20px;
+ }
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar .menu a {
+        padding: 5px 20px;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 16px;
+    }
+
+    .navbar .menu a {
+        font-size: 14px;
+    }
+}
